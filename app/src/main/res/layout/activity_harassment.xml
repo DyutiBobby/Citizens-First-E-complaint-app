@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Harassment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Harassment">
+
+        <TextView
+            android:id="@+id/haccusedtext"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:gravity="center|start"
+            android:text="Name of accused person:"
+            android:textColor="#FD0505"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.688" />
+
+        <Button
+            android:id="@+id/hsubmit"
+            android:layout_width="174dp"
+            android:layout_height="67dp"
+            android:text="Submit"
+            app:backgroundTint="#20E628"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.964" />
+
+        <EditText
+            android:id="@+id/hpincode"
+            android:layout_width="199dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <EditText
+            android:id="@+id/hcriminal"
+            android:layout_width="344dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.747" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:gravity="center|start"
+            android:text="Describe the incident*:"
+            android:textColor="#F40606"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.535" />
+
+        <EditText
+            android:id="@+id/editTextDetails2"
+            android:layout_width="344dp"
+            android:layout_height="98dp"
+            android:ems="10"
+            android:gravity="center|start|top"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.616" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="258dp"
+            android:layout_height="44dp"
+            android:gravity="center|start"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.343" />
+
+        <EditText
+            android:id="@+id/hcity"
+            android:layout_width="324dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="City/Village"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279" />
+
+        <EditText
+            android:id="@+id/editTextDate_time"
+            android:layout_width="145dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:inputType="date|datetime|time"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <TextView
+            android:id="@+id/hdatename"
+            android:layout_width="156dp"
+            android:layout_height="35dp"
+            android:gravity="center|start"
+            android:text="Date and Time of Incident"
+            android:textColor="#FA0606"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <TextView
+            android:id="@+id/hlocation1"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:gravity="center|start"
+            android:text="Location of the incident*:"
+            android:textColor="#F40101"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <EditText
+            android:id="@+id/haddress"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="Street Address of crime"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/harassment"
+        android:layout_width="161dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="Harassment"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

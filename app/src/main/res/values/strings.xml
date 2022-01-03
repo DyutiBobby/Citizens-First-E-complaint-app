@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Citizens First</string>
+    <string
+        name="messageWithLink"><a href="https://console.firebase.google.com/u/0/project/logindemo-3ef8a/firestore/data~2FUsers">Tap here to open Database</a></string>
+</resources>

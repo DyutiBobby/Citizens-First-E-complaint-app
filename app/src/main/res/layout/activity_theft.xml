@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="391dp"
+    tools:layout_editor_absoluteY="338dp"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Theft">
+
+
+        <TextView
+            android:id="@+id/textViewTheft"
+            android:layout_width="161dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="Theft"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/textViewDateTime"
+            android:layout_width="145dp"
+            android:layout_height="41dp"
+            android:gravity="center|start"
+            android:text="Date and Time of Incident"
+            android:textColor="#EC0707"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <EditText
+            android:id="@+id/editTextTheftDate_Time"
+            android:layout_width="145dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:inputType="date|time"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.879"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <TextView
+            android:id="@+id/textViewTheftLocation"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:gravity="center|start"
+            android:text="Location of Theft*:-"
+            android:textColor="#F80A0A"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDateTime"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTheftStreet"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="Street/Place Address"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTheftLocation"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTheftVillage"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="City/Village"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftStreet"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/spinnerTheft"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center|start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftVillage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTheftPincode"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTheft"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <TextView
+            android:id="@+id/textViewItems"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center|start"
+            android:text="Item(s)/Cash Stolen*:-"
+            android:textColor="#ED0404"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftPincode"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTheftItems"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="eg@MobilePhone,TV,Laptop,Vehicle"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewItems"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/textViewWorth"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="260dp"
+            android:gravity="center|start"
+            android:text="Worth of stolen Item(s)/Cash*:-"
+            android:textColor="#ED0404"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftItems"
+            app:layout_constraintVertical_bias="0.009" />
+
+        <EditText
+            android:id="@+id/editTextWorth"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="212dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:hint="Worth in Rs /-"
+            android:inputType="number|text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWorth"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewDetailsTheft"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="164dp"
+            android:gravity="center|start"
+            android:text="Details of Theft:-"
+            android:textColor="#F10404"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextWorth"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <EditText
+            android:id="@+id/editTextTheftDetails"
+            android:layout_width="324dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="120dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Please Describe the Incident"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetailsTheft"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewTheftAccused"
+            android:layout_width="192dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="72dp"
+            android:gravity="center|start"
+            android:text="Name of accused person:-"
+            android:textColor="#DA0303"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftDetails"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTheftPersonName"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="280dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTheftAccused" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="174dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="149dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="#2ED835"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTheftPersonName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
